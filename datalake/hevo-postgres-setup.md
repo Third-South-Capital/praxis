@@ -1,3 +1,11 @@
+# Commentary from Harrison
+
+###Notes
+The below documentation was generated in an iterative conversation between me and Claude. I tried to cover all the relevant points in our setup of Hevo. I think if you want to understand Hevo, the best way to do it is look at the database. Nearly every table in the destination postgres database came from a pipeline that Hevo has setup. If you are looking to add a new pipeline, I would work with LLM to understand source documentation. Unless it is a frequently-used integration like Stripe, most sources will require some configuring in REST. Primary watch-out for Hevo is ensuring it isn't setting its Hevo Ingested field as primary key - that makes a mess.
+
+Not much to commenet on in terms of the postgres setup itself. I use DBeaver to get in. Any time you need to auth into the DB, remember to add your IP to the security group on Amazon RDS. 
+
+
 # Hevo Data Platform Documentation - Third South Capital
 
 ## Table of Contents
