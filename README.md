@@ -5,6 +5,7 @@ This file is meant to be a project-agnostic dossier on how our codebases should 
 - Arbitrary scripts should be written in Python unless that's obviously unfeasible, to let us take advantage of [inline dependencies](https://simonwillison.net/2024/Dec/19/one-shot-python-tools/#inline-dependencies-and-uv-run), and exist in a `scripts/` directory.
 - Every repository must have a [justfile](https://github.com/casey/just) with the following commands: `test`, `bootstrap`, `install`, `lint`, `build`, and `dev`.
 - Code changes should be backed by unit tests whenever possible.
+- Tests should be colocated with the files they're testing. Instead of a test for `foo/bar/baz.py` existing in `tests/foo/bar/baz.py`, it should be in `foo/bar/baz--test.py`.
 
 ### Python
 
