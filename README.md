@@ -18,6 +18,7 @@ This file is meant to be a project-agnostic dossier on how our codebases should 
 - Use `biome` as a lint tool and `knip` to detect dead codepaths.
 - Use `typescript` unless the backing JavaScript is so small so as to not even warrant a build step.
 - Use `tailwind` as a CSS library.
+- Use [Heroicons](https://heroicons.com/) as an icon library. 
 
 ## Vendors
 
@@ -29,3 +30,8 @@ This file is meant to be a project-agnostic dossier on how our codebases should 
 - Use Axios for logging.
 - Use Cloudflare for DNS.
 - Use Ahrefs for SEO.
+
+## Git 
+
+- Use [squash merges](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#squash-and-merge-your-commits).
+- Pull requests should be backed by GitHub actions which run the lint and test actions outlined in the `justfile`.
