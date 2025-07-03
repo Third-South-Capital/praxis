@@ -36,3 +36,4 @@ This file is meant to be a project-agnostic dossier on how our codebases should 
 
 - Use [squash merges](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#squash-and-merge-your-commits).
 - Pull requests should be backed by GitHub actions which run the lint and test actions outlined in the `justfile`.
+- Whenever possible, break your code changes and pull requests up into _atomic_ chunks — meaning that a given change only does one thing. This makes pull requests easier to review and bugs/incidents easier to diagnose.
