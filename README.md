@@ -19,7 +19,12 @@ This file is meant to be a project-agnostic dossier on how our codebases should 
 - Use `biome` as a lint tool and `knip` to detect dead codepaths.
 - Use `typescript` unless the backing JavaScript is so small so as to not even warrant a build step.
 - Use `tailwind` as a CSS library.
-- Use [Heroicons](https://heroicons.com/) as an icon library. 
+- Use [Heroicons](https://heroicons.com/) as an icon library.
+
+#### SEO
+
+- All marketing sites should have a sitemap.xml and proper meta tags.
+- All marketing sites (or sites with a user-facing component) should be registered on [Google Search Console](https://search.google.com/search-console/about) and [Ahrefs](https://ahrefs.com/).
 
 ## Vendors
 
@@ -37,3 +42,7 @@ This file is meant to be a project-agnostic dossier on how our codebases should 
 - Use [squash merges](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#squash-and-merge-your-commits).
 - Pull requests should be backed by GitHub actions which run the lint and test actions outlined in the `justfile`.
 - Whenever possible, break your code changes and pull requests up into _atomic_ chunks — meaning that a given change only does one thing. This makes pull requests easier to review and bugs/incidents easier to diagnose.
+
+## Miscellany
+
+- Register the outbound sending domain in [Google Postmaster Tools](https://postmaster.google.com/).
