@@ -46,3 +46,4 @@ This file is meant to be a project-agnostic dossier on how our codebases should 
 ## Miscellany
 
 - Register the outbound sending domain in [Google Postmaster Tools](https://postmaster.google.com/).
+- Never use `example.com` or other such obviously generic placeholders: try and have your dummy data be as realistic as possible.
