@@ -47,3 +47,4 @@ This file is meant to be a project-agnostic dossier on how our codebases should 
 
 - Register the outbound sending domain in [Google Postmaster Tools](https://postmaster.google.com/).
 - Never use `example.com` or other such obviously generic placeholders: try and have your dummy data be as realistic as possible.
+- When evaluating a tool (open source or otherwise), a good heuristic for its durability: have there been any non-trivial public posts or changes made to it in the past six months?
