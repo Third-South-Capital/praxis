@@ -10,7 +10,7 @@ This file is meant to be a project-agnostic dossier on how our codebases should 
 ### Python
 
 - Use `pytest` as the general testing library. Avoid class-based tests.
-- Use `ruff` as the linter and formatter. 
+- Use `ruff` as the linter and formatter.
 - Use `uv` as the dependency manager.
 
 ### Frontend
@@ -31,13 +31,13 @@ This file is meant to be a project-agnostic dossier on how our codebases should 
 - Use Stripe for payments.
 - Use Postmark for transactional email.
 - Use Buttondown (😎) for broadcast email.
-- Use Fathom for marketing site analytics.
-- Use Sentry for error tracking.
-- Use Axios for logging.
+- Use Seline for marketing site analytics.
+- Use Sentry for error tracking and logging
 - Use Cloudflare for DNS.
 - Use Ahrefs for SEO.
+- Use S3 for backing up databases. Have multiple backups that run consistently!
 
-## Git 
+## Git
 
 - Use [squash merges](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#squash-and-merge-your-commits).
 - Pull requests should be backed by GitHub actions which run the lint and test actions outlined in the `justfile`.
